@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+
+    "internal-docs": { "url": "https://docs.internal.example.com/mcp", "disabled": false },
+
+    "local-tool": {
+      "command": "local-tool",
+      "args": ["--stdio", "--quiet"],
+      "env": { "LOG_LEVEL": "info" }
+    }
+  },
+  "unrelatedSetting": { "keep": [1, 2, 3] }
+}

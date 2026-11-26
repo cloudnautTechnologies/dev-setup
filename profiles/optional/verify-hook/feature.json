@@ -1,0 +1,6 @@
+{
+  "commandFile": {
+    "target": ".cloudnaut/verify-command.json",
+    "template": "template/verify-command.json"
+  }
+}

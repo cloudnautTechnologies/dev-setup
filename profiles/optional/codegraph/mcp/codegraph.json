@@ -1,0 +1,9 @@
+{
+  "command": "codegraph",
+  "args": ["serve", "--mcp", "--no-telemetry"],
+  "env": {
+    "CODEGRAPH_TELEMETRY": "0",
+    "DO_NOT_TRACK": "1",
+    "CODEGRAPH_NO_UPDATE_CHECK": "1"
+  }
+}

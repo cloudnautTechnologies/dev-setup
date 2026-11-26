@@ -1,0 +1,14 @@
+{
+  "pin": {
+    "version": "1.6.4",
+    "tag": "v1.6.4",
+    "commit": "461a5d87a873a4932997cd9a49042ab30e45a675",
+    "npmIntegrity": "sha512-Vn4rKe3wTDi8jV3Ni3nUtCX17X3y+hv5rBGkOrO1dtE9ICj3eByVbHM/A9CmR68Cjl8QiGRoOhn7phnS1hyjZg=="
+  },
+  "mcpEntries": [
+    { "name": "codegraph", "source": "mcp/codegraph.json" }
+  ],
+  "lines": [
+    { "file": ".gitignore", "line": ".codegraph/" }
+  ]
+}

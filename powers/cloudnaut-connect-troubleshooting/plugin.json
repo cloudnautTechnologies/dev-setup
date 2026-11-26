@@ -1,0 +1,13 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "cloudnaut-connect-troubleshooting",
+  "version": "0.1.0",
+  "description": "Troubleshoot Amazon Connect contact flows from entry point through routing, Lambda or Lex dependencies, and fallback paths.",
+  "author": {
+    "name": "Cloudnaut",
+    "url": "https://github.com/cloudnautTechnologies"
+  },
+  "keywords": ["amazon connect", "contact flow", "connect troubleshooting", "contact center"],
+  "homepage": "https://github.com/cloudnautTechnologies/dev-setup",
+  "repository": "https://github.com/cloudnautTechnologies/dev-setup"
+}

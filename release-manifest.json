@@ -1,0 +1,148 @@
+{
+  "features": {
+    "codegraph": {
+      "lines": [
+        {
+          "file": ".gitignore",
+          "line": ".codegraph/"
+        }
+      ],
+      "mcpEntries": [
+        {
+          "file": ".kiro/settings/mcp.json",
+          "name": "codegraph",
+          "sha256": "1c81e9d4e6f246d65a2a02eecf4482508aa8a6ac60f695c09f255430aef50019",
+          "source": "profiles/optional/codegraph/mcp/codegraph.json"
+        }
+      ],
+      "pin": {
+        "commit": "461a5d87a873a4932997cd9a49042ab30e45a675",
+        "npmIntegrity": "sha512-Vn4rKe3wTDi8jV3Ni3nUtCX17X3y+hv5rBGkOrO1dtE9ICj3eByVbHM/A9CmR68Cjl8QiGRoOhn7phnS1hyjZg==",
+        "tag": "v1.6.4",
+        "version": "1.6.4"
+      }
+    },
+    "ponytail": {
+      "files": [
+        {
+          "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+          "source": "profiles/optional/ponytail/files/.cloudnaut/third-party/ponytail/LICENSE",
+          "target": ".cloudnaut/third-party/ponytail/LICENSE"
+        },
+        {
+          "sha256": "6781958ee80a3e09a4b9f96a488d0d5790719601092006f4d407dc19bc75d64e",
+          "source": "profiles/optional/ponytail/files/.cloudnaut/third-party/ponytail/SOURCE.md",
+          "target": ".cloudnaut/third-party/ponytail/SOURCE.md"
+        },
+        {
+          "sha256": "bbd1c60ea71dac352cc46f47476a9b8a75793af5a31f9df93c92a944dc7b0bbd",
+          "source": "profiles/optional/ponytail/files/.kiro/steering/ponytail.md",
+          "target": ".kiro/steering/ponytail.md"
+        }
+      ],
+      "pin": {
+        "commit": "7801d061243d7b753bad0e0b3c057cd250b11755",
+        "tag": "v5.3.3"
+      }
+    },
+    "verifyHook": {
+      "commandFile": {
+        "target": ".cloudnaut/verify-command.json",
+        "template": "profiles/optional/verify-hook/template/verify-command.json"
+      },
+      "files": [
+        {
+          "sha256": "fabd244001c6ae622b9007e7ac0bd4e8f67e1b75cb72b49c893fa8e9a7282659",
+          "source": "profiles/optional/verify-hook/files/.cloudnaut/run-verify.cjs",
+          "target": ".cloudnaut/run-verify.cjs"
+        },
+        {
+          "sha256": "8332aa227376948dea163b09bc4381fdb650e2158b0a135262d1c0d19864b8b6",
+          "source": "profiles/optional/verify-hook/files/.kiro/hooks/cloudnaut-verify-after-task.json",
+          "target": ".kiro/hooks/cloudnaut-verify-after-task.json"
+        }
+      ]
+    }
+  },
+  "minNode": "22.0.0",
+  "name": "cloudnaut-dev-setup",
+  "profiles": {
+    "aws": {
+      "extensions": [
+        "amazonwebservices.aws-toolkit-vscode"
+      ],
+      "files": [
+        {
+          "sha256": "08041bbabd7057c1152e4628f10d88692c84e68662c34027457c1a7086aeb1b5",
+          "source": "profiles/aws/files/.kiro/skills/review-aws-infra-change/SKILL.md",
+          "target": ".kiro/skills/review-aws-infra-change/SKILL.md"
+        },
+        {
+          "sha256": "86e9d884b9a981518b7834a6254bcdb7e203488e2c4e8c593f0dc271c2dc774f",
+          "source": "profiles/aws/files/.kiro/steering/cloudnaut-aws-cdk.md",
+          "target": ".kiro/steering/cloudnaut-aws-cdk.md"
+        }
+      ],
+      "includes": [
+        "core"
+      ],
+      "mcpEntries": [
+        {
+          "file": ".kiro/settings/mcp.json",
+          "name": "aws-knowledge-mcp",
+          "sha256": "7f5d30cd0f0d53236273c00a9c2b47487165424d324e593b570edd92f0886c5d",
+          "source": "profiles/aws/mcp/aws-knowledge-mcp.json"
+        }
+      ]
+    },
+    "connect": {
+      "extensions": [],
+      "files": [
+        {
+          "sha256": "daa8037f4617ddd6436e749b5b0a731f7fc4a8f16a4d392865bec793f2eb520c",
+          "source": "profiles/connect/files/.kiro/skills/connect-flow-troubleshooting/SKILL.md",
+          "target": ".kiro/skills/connect-flow-troubleshooting/SKILL.md"
+        },
+        {
+          "sha256": "57d0c935d5708f7690ec04075ad443636ab0531e708b53f3b43f11f7dc17873b",
+          "source": "profiles/connect/files/.kiro/steering/cloudnaut-connect.md",
+          "target": ".kiro/steering/cloudnaut-connect.md"
+        }
+      ],
+      "includes": [
+        "core",
+        "aws"
+      ],
+      "mcpEntries": []
+    },
+    "core": {
+      "extensions": [],
+      "files": [
+        {
+          "sha256": "6c7e6df2c161f0cdee7635b9e0b03f5284f889b4976aba5548f83398e77483d1",
+          "source": "profiles/core/files/.kiro/skills/review-change/SKILL.md",
+          "target": ".kiro/skills/review-change/SKILL.md"
+        },
+        {
+          "sha256": "fa6a794baf40d33ca5163df88f53d8ae8c1a341b6926867cbbb7d0bc9be8b9d7",
+          "source": "profiles/core/files/.kiro/skills/trace-code-path/SKILL.md",
+          "target": ".kiro/skills/trace-code-path/SKILL.md"
+        },
+        {
+          "sha256": "d8dddf8e7d4763867f5f133471527e8c1a8248a4e3ab21e65f30ca1f0945e3ca",
+          "source": "profiles/core/files/.kiro/steering/cloudnaut-core.md",
+          "target": ".kiro/steering/cloudnaut-core.md"
+        },
+        {
+          "sha256": "8f45748c65908e25e709bdf78dccbde30419795127b39166239c3972382527f0",
+          "source": "profiles/core/files/docs/cloudnaut/project-steering.example.md",
+          "target": "docs/cloudnaut/project-steering.example.md"
+        }
+      ],
+      "includes": [],
+      "mcpEntries": []
+    }
+  },
+  "schemaVersion": 1,
+  "version": "0.1.0"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "cloudnaut-dev-setup",
+  "version": "0.1.0",
+  "description": "Cloudnaut's public, versioned Kiro IDE setup: profiles, a zero-dependency CLI, and an installable Power.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "cloudnaut-dev-setup": "bin/dev-setup.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "profiles/",
+    "powers/",
+    "docs/",
+    "release-manifest.json",
+    "README.md",
+    "CHANGELOG.md",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\"",
+    "check": "node scripts/generate-manifest.js --check && node scripts/sync-power.js --check && node scripts/check-content.js && node scripts/check-json.js",
+    "smoke": "node scripts/smoke-local.js"
+  }
+}

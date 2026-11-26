@@ -1,0 +1,3 @@
+{
+  "command": "<the project's existing verification command, supplied with --verify-command>"
+}

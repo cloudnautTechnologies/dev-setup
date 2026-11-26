@@ -1,0 +1,10 @@
+// Recommended extensions for orders-service (fictional fixture)
+{
+  "recommendations": [
+    "example.lint-tool",
+    "example.formatter", // keep: team formatter
+  ],
+  "unwantedRecommendations": [
+    "example.deprecated-tool"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "includes": ["core"],
+  "mcpEntries": [
+    { "name": "aws-knowledge-mcp", "source": "mcp/aws-knowledge-mcp.json" }
+  ],
+  "extensions": ["amazonwebservices.aws-toolkit-vscode"]
+}
